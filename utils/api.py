@@ -48,7 +48,6 @@ def retrieve_video_info(url):
         dict: Video information including title, description, and view count.
     """
     yt = YouTube(url)
-    
     return {
         "title": yt.title,
         "description": yt.description
